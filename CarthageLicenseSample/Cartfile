@@ -1,0 +1,6 @@
+github "ikesyo/Himotoki"
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxDataSources"
+github "antitypical/Result"
+github "rs/SDWebImage"
+github "malcommac/SwiftDate"
