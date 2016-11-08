@@ -29,11 +29,14 @@ dirs = Dir.glob(carthage_path)
 dirs.each do |d|
   license_path = "#{d}/LICENSE"
   license_md_path = "#{d}/LICENSE.md"
+  license_txt_path = "#{d}/LICENSE.txt"
 
   if File.exist?(license_path)
     text = File.open(license_path, "r").read
   elsif File.exist?(license_md_path)
     text = File.open(license_md_path, "r").read
+  elsif File.exist?(license_txt_path)
+    text = File.open(license_txt_path, "r").read
   else 
     next
   end
